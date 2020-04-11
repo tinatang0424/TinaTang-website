@@ -2773,11 +2773,6 @@ input, select, textarea {
 			padding: 2em;
 			width: 100%;
 		}
-
-        #header > footer p {
-            padding-top: 2em;
-        }
-
 			#header > footer .icons {
 				margin: 0;
 			}
@@ -2854,10 +2849,13 @@ input, select, textarea {
 	#footer {
 		background: #fafafa;
         background-image: url('footerbg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: inherit;
 		border-top: 0;
 		color: #fff;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 4em 0 0 0;
 	}
 		#footer .copyright {
 			line-height: 1em;
@@ -3043,7 +3041,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: #222;
+				background: #3B3B3B;
 				color: #fff;
 				min-width: 320px;
 			}
