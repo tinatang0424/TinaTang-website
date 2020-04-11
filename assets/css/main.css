@@ -99,7 +99,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #888;
-		font-family: "Lato", sans-serif;
+		font-family: "Lato", sans-serif, "Microsoft JhengHei";
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -154,6 +154,8 @@ input, select, textarea {
 	h3 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+        box-shadow: 0 1px #777;
+        padding-bottom:5px;
 	}
 
 	h4 {
@@ -2772,6 +2774,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
+        #header > footer p {
+            padding-top: 2em;
+        }
+
 			#header > footer .icons {
 				margin: 0;
 			}
@@ -2821,6 +2827,7 @@ input, select, textarea {
 						border-top: 0;
 					}
 
+
 /* Wrapper */
 
 	#wrapper {
@@ -2846,12 +2853,12 @@ input, select, textarea {
 
 	#footer {
 		background: #fafafa;
+        background-image: url('footerbg.png');
 		border-top: 0;
-		color: #c0c0c0;
+		color: #fff;
 		overflow: hidden;
 		padding: 4em 0 2em 0;
 	}
-
 		#footer .copyright {
 			line-height: 1em;
 			list-style: none;
