@@ -12,6 +12,7 @@
 		$header = $('#header'),
 		$titleBar = null,
 		$nav = $('#nav'),
+        $section = $('section'),
 		$wrapper = $('#wrapper');
 
 	// Breakpoints.
@@ -156,5 +157,59 @@
 
 			}
 		});
+    
+    var $one=$('#one h3'),
+        $two=$('#two h3'),
+        $three=$('#three h3'),
+        $four=$('#four h3');
+    
+    $one.mouseenter(function(){
+        $one.css("color","#6A5ACD");
+        $one.animate({fontSize:'2em'},"slow");
+    });
+    
+    $one.mouseleave(function(){
+        $one.css("color","#777");
+        $one.animate({fontSize:'1.5em'},"slow");
+    });
+    
+    $two.mouseenter(function(){
+        $two.css("color","#B399FF");
+        $two.animate({fontSize:'2em'},"slow");
+    });
+    
+    $two.mouseleave(function(){
+        $two.css("color","#777");
+        $two.animate({fontSize:'1.5em'},"slow");
+    });
+    
+    $three.mouseenter(function(){
+        $three.css("color","#6A5ACD");
+        $three.animate({fontSize:'2em'},"slow");
+    });
+    
+    $three.mouseleave(function(){
+        $three.css("color","#777");
+        $three.animate({fontSize:'1.5em'},"slow");
+    });
+    
+    $four.mouseenter(function(){
+        $four.css("color","#B399FF");
+        $four.animate({fontSize:'2em'},"slow");
+    });
+    
+    $four.mouseleave(function(){
+        $four.css("color","#777");
+        $four.animate({fontSize:'1.5em'},"slow");
+    });
+    
+    var string = "我是湯嘉玲，\n喜歡音樂，喜歡遊戲，喜歡天馬行空，\n喜歡整潔的&排版，喜歡美麗的App和網頁~";
+    var str = string.split("");
+    var el = document.getElementById('str');
+
+    (function animate() {
+        str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+        var running = setTimeout(animate, 90);
+    })();
 
 })(jQuery);

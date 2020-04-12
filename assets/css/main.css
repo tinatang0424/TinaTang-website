@@ -2844,6 +2844,11 @@ input, select, textarea {
 			border-top: 0;
 		}
 
+        #main > section > .container .major p {
+            font-size: 1.2em;
+            width: 65%;
+        }
+
 /* Footer */
 
 	#footer {
@@ -2856,6 +2861,7 @@ input, select, textarea {
 		color: #fff;
 		overflow: hidden;
 		padding: 4em 0 0 0;
+        text-shadow: 0 0 0.2em #777;
 	}
 		#footer .copyright {
 			line-height: 1em;
@@ -3054,7 +3060,7 @@ input, select, textarea {
 					line-height: 44px;
 					padding: 0 1em;
 					width: 100%;
-					text-align: left;
+					text-align: center;
 				}
 
 					#titleBar .title a {
