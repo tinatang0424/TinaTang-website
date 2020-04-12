@@ -2845,8 +2845,7 @@ input, select, textarea {
 		}
 
         #main > section > .container .major p {
-            font-size: 1.2em;
-            width: 65%;
+            font-size: 1.4em;
         }
 
 /* Footer */
@@ -3228,10 +3227,6 @@ input, select, textarea {
 			#main > section > .container {
 				padding: 2em 0 0 0;
 			}
-        
-            #main > section > .container .major p {
-                width: 100%;
-            }
 
 		/* Footer */
 
