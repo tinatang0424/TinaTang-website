@@ -203,7 +203,7 @@
         $four.animate({fontSize:'1.5em'},"slow");
     });
     
-    var string = "我是湯嘉玲，\n喜歡音樂，喜歡遊戲，喜歡天馬行空，\n喜歡整潔的&排版，喜歡美麗的App和網頁~";
+    var string = "我是湯嘉玲，\n喜歡音樂，喜歡遊戲，喜歡天馬行空，\n喜歡整潔的排版，喜歡美麗的App和網頁~";
     var str = string.split("");
     var el = document.getElementById('str');
 
