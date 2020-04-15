@@ -26,9 +26,11 @@
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
+            
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+            
 		});
 
 	// Tweaks/fixes.
@@ -158,27 +160,27 @@
 			}
 		});
     
-//text   
-var one = $("#one h3"),
-    two = $("#two h3"),
-    three = $("#three h3"),
-    four = $("#four h3");
+    //text   
+    var one = $("#one h3"),
+        two = $("#two h3"),
+        three = $("#three h3"),
+        four = $("#four h3");
 
-function text (x){
-  x.mouseenter(function(){
-        x.css("color","#6A5ACD");
-        x.animate({fontSize:'2em'},"slow");
-    });
-   x.mouseleave(function(){
-        x.css("color","#777");
-        x.animate({fontSize:'1.75em'},"slow");
-    });
-}
+    function text (x){
+        x.mouseenter(function(){
+            x.css("color","#6A5ACD");
+            x.animate({fontSize:'2em'},"slow");
+        });
+        x.mouseleave(function(){
+            x.css("color","#777");
+            x.animate({fontSize:'1.75em'},"slow");
+        });
+    }
 
-text(one),
-text(two),
-text(three),
-text(four);
+    text(one),
+    text(two),
+    text(three),
+    text(four);
 
     
     var string = "我是湯嘉玲，\n喜歡音樂，喜歡遊戲，喜歡天馬行空，\n喜歡整潔的排版，喜歡美麗的App和網頁~";
@@ -189,5 +191,17 @@ text(four);
         str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
         var running = setTimeout(animate, 90);
     })();
-
+    
+    (function email() {
+        var email = $(".email"),
+            mailc = $(".mail");
+        mailc.click(function(){
+            email.css("color","#9955FF");  
+        });
+        mailc.dblclick(function(){
+            email.css("color","#fff");  
+        });
+    })();
+    
+    
 })(jQuery);
