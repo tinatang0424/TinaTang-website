@@ -192,6 +192,8 @@
         var running = setTimeout(animate, 90);
     })();
     
+
+
     function email() {
         var email = $(".email"),
             mailc = $(".mail");
@@ -201,9 +203,11 @@
         mailc.dblclick(function(){
             email.css("color","#fff");  
         });
+
     };
     
     email();
+
     
     
 })(jQuery);
